@@ -14,14 +14,15 @@ const App = () => {
     <section className="container">
       <h1 className="title">Thra Basic Modal React</h1>
       <form onSubmit={handleSubmit}>
-        <button>Submit</button>
+        <button>Click me</button>
       </form>
       <Modal
         isDisplayed={modalIsDisplayed}
         onCloseModal={() => setModalIsDisplayed(false)}
         content={
           <div id="confirmation" className="modal">
-            This is a modal
+            <p>This is a modal</p>
+            <p>Click on 'X' button to close me</p>
           </div>
         }
       />
